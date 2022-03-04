@@ -8,6 +8,12 @@ urlpatterns = [
          views.PqrCreateView.as_view(),
          name='pqr',
     ),
+    
+    path(
+        'contacto-letran/',
+         views.ContactoCreateView.as_view(),
+         name='contacto-letran',
+    ),
 
     
     ]

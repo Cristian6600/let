@@ -7,7 +7,7 @@ app_name = "home_app"
 urlpatterns = [
 
     path(
-        'publico/', 
+        '', 
         views.probando.as_view(),
         name='publico',
     ),

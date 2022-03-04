@@ -11,42 +11,46 @@
   </div>
   
   <div class="top-bar" id="responsive-menu">
-    
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <a href="{% url 'home_app:publico' %}"> <img src="{% static 'img/colores letran +.png' %}"  alt="10" width="95"> </a>
-        <li class="has-submenu">
-          <a href="#0"><strong>Servicios</strong> </a>
-          <ul class="submenu menu vertical" data-submenu>
-              <li><a href="{% url 'home_app:mensajeria-documentos' %}">Mensajeria expresa</a></li>
-              <li><a href="{% url 'home_app:paqueteo' %}">Cargue paqueteo</a></li>
-              <li><a href="{% url 'home_app:servicios-adicionales' %}">Servicios adicionales</a></li>
-          </ul>      
+    <a href="{% url 'home_app:publico' %}"> <img src="{% static 'img/colores letran +.png' %}"  alt="10" width="100"> </a>
+      <div class="top-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+
+          <li class="has-submenu">
+            <a href="{% url 'home_app:quienes-somos' %}"><strong>Nuestra empresa</strong> </a>
+          </li>
+        
+          <li class="has-submenu">
+            <a href="#0"><strong>Servicios</strong> </a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="{% url 'home_app:mensajeria-documentos' %}">Mensajeria expresa</a></li>
+                <li><a href="{% url 'home_app:paqueteo' %}">Cargue paqueteo</a></li>
+                <li><a href="{% url 'home_app:servicios-adicionales' %}">Servicios adicionales</a></li>
+                <li><a href="{% static 'img/Tarifarios.pdf' %}">Tarifas</a></li>
+            </ul>      
         </li>
         <li class="has-submenu">
           <a href="#0"><strong>Rastrear</strong> </a>
           <ul class="submenu menu vertical" data-submenu>
-            <li><a href="https://express.firstsource.net.co/tk/">Envios</a></li>
-            <li><a href="http://190.24.11.51/openc3/">Financiero</a></li>
-            <li><a href="https://firstsource.appsiscore.com/app/">Servicio</a></li>
+            <li><a href="https://express.firstsource.net.co/tk/">Tracking express y paqueteo</a></li>
+            <li><a href="http://190.24.11.51/openc3/">Tracking financiero</a></li>
           </ul>
         </li>
-        <li class="has-submenu">
-          <a href="{% url 'home_app:quienes-somos' %}"><strong>Quienes somos</strong> </a>
-        </li>
+        
+        
         <li class="has-submenu">
           <a href="{% url 'home_app:sedes' %}"><strong>Sedes</strong> </a>
         </li>
 
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li></li>
-        
-      </ul>
-    </div>
+        <li class="has-submenu">
+          <a href="#0"><strong>Ingresar</strong> </a>
+          <ul class="submenu menu vertical" data-submenu>
+            <li><a href="https://express.firstsource.net.co/tk/">Express y paqueteo</a></li>
+            <li><a href="http://190.24.11.51/openc3/">Financiero</a></li>
+          </ul>
+        </li>
+      </div>
   </div>
+ 
                         {% block publico-content %}
                         {% endblock publico-content %}
                         
@@ -59,11 +63,13 @@
                                 <h4>Centro de ayuda</h4>
                                 <li><a href="#">Cumplimiento</a></li>
                                 <li><a href="{% url 'pqr_app:pqr' %}">PQR´s</a></li>
+                                <li><a href="{% url 'pqr_app:contacto-letran' %}">Contacto</a></li>
                                 <li><a href="#">Trabaje con nosotros</a></li>
                               </div>
                               
                                 <div class="medium-6 cell small-order-1 medium-order-2">
-                                  <img class="thumbnail" src="{% static 'img/LETRAN NEGRO.PNG' %} " width="385">
+                                  <br>
+                                  <img class="thumbnail" src="{% static 'img/LETRAN NEGRO.PNG' %} " width="250">
                                 </div>
                           </div>
        

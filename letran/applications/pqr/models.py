@@ -8,6 +8,7 @@ from django.db import models
 # Create your models here.
 
 class Pqr(models.Model):
+
     TIPOS = (
         ('C', 'CC'),
         ('CE', 'CE'),
@@ -37,3 +38,11 @@ class Pqr(models.Model):
     #     )
     n_guia = models.IntegerField()
     desc_pqr = models.TextField()
+
+class Contacto(models.Model):
+    nombre = models.CharField(max_length=40)
+    mail = models.EmailField()
+    ciudad = models.CharField(max_length=40)
+    empresa = models.CharField(max_length=60)
+    telefono = models.CharField(max_length=15)
+    aceptar = models.BooleanField()
