@@ -4,12 +4,48 @@
 
 {% block publico-content %}
 
-<div class="callout large">
-  <div class="hero-section">
-    <div class="hero-section-text">
-      <h1>Quienes somos </h1>
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+  <div class="orbit-wrapper">
+    <div class="orbit-controls">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
     </div>
+    <ul class="orbit-container">
+      <li class="is-active orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="{% static 'img/NOSTROS_1.png' %}" alt="Space">
+          <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="{% static 'img/NOSTROS_2.png' %}" alt="Space">
+          <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="{% static 'img/NOSTROS_3.png' %}" alt="Space">
+          <figcaption class="orbit-caption">Encapsulating</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="{% static 'img/NOSTROS_4.png' %}" alt="Space">
+          <figcaption class="orbit-caption">Outta This World</figcaption>
+        </figure>
+      </li>
+    </ul>
   </div>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="0">
+      <span class="show-for-sr">First slide details.</span>
+      <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+    </button>
+    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+  </nav>
 </div>
 
   <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
@@ -120,18 +156,30 @@
       <article class="grid-container">
         <div class="grid-x grid-margin-x">
           <div class="medium-6 cell small-order-2 medium-order-1">
-           <h3>Política de SGI</h3>
-            <p class="subheader">FIRSTSOURCE S.A.S mediante el Sistema de Gestión Integrado (SGI), entrega soluciones logísticas enfocadas en el cumplimiento del servicio a traves de las políticas trabajadas en el Sistema de Gestión de Calidad (SGC), el Sistema de Gestión de Seguridad y Salud en el Trabajo(SG-SST) y el Plan de Seguridad Vial (PESV).
+           <h4>AGREMIACION FENALCO</h4>
+            <p class="subheader">FIRSTSOURCE S.A.S bajo su marca Le-Tran pertenece a la agremiación de mensajeria expresa de la FEDERACIÓN NACIONAL DE COMERCIANTES - FENALCO
+              siendo participe de las mesas de trabajo, formación del sector y representación. 
               
               </p>
-              <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">Sistema de Gestión de Calidad (SGC) </FONT></a> </li>
+              <!-- <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">Sistema de Gestión de Calidad (SGC) </FONT></a> </li>
               <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">Sistema de Gestión de Seguridad y Salud en el Trabajo (SG-SST) </FONT></a> </li>
-              <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">PCI-DSS</FONT></a> </li>
+              <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">PCI-DSS</FONT></a> </li> -->
             
           </div>
           <div class="medium-6 cell small-order-1 medium-order-2">
-            <a href="https://www.fenalco.com.co"> <img class="thumbnail" src="{% static 'img/FENALCO.jpg' %}" width="400" alt="50" ></a>
+          <center>  <a href="https://www.fenalco.com.co"> <img class="thumbnail" src="{% static 'img/FENALCO.jpg' %}" width="150" alt="50" ></a></center>
           </div>
+          <div class="medium-6 cell small-order-2 medium-order-1">
+            <h4>CERTIFICACIÓN PCI-DSS</h4>
+             <p class="subheader">Actualmente la compañia se encuentra certificada bajo el estándar de seguridad de datos para la industria de tarjeta de pago dando cuplimiento a los requisitos de la norma PCI-DSS 
+               
+               </p>
+               <!-- <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">Certificado PCI </FONT></a> </li> -->
+               
+           </div>
+           <div class="medium-6 cell small-order-1 medium-order-2">
+            <center> <a href="{% static 'img/documentos/FIRCO22092021 (3).pdf' %}"> <img class="thumbnail" src="{% static 'img/LogoC-Grande.png' %}" width="150" alt="50" ></a> </center>
+           </div>
         </div>
       
       </article>

@@ -65,4 +65,9 @@ urlpatterns = [
         name='politica-sgc',
     ),
     
+    path(
+        'cumplimiento/', 
+        views.Cumplimiento.as_view(),
+        name='cumplimiento',
+    ),
 ]

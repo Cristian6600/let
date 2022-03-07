@@ -1,3 +1,4 @@
+from re import template
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
@@ -36,3 +37,6 @@ class Quienes_somos(TemplateView):
 
 class Politica_SGC(TemplateView):
     template_name = "publico/politica_sgc.html"
+
+class Cumplimiento(TemplateView):
+    template_name = "publico/requerimientos/cumplimiento.html"
