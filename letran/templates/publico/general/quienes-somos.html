@@ -16,7 +16,7 @@
     <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Misión y visión</a></li>
     <li class="tabs-title"><a href="#panel2">Política integral</a></li>
     <li class="tabs-title"><a href="#panel3">Política de seguridad vial</a></li>
-    <li class="tabs-title"><a href="#panel4">Premios y distinciones</a></li>
+    <li class="tabs-title"><a href="#panel4">Certificaciones - Agremiaciones</a></li>
   </ul>
 
   <div class="tabs-content" data-tabs-content="example-tabs">
@@ -68,7 +68,6 @@
               </p>
               <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">Sistema de Gestión de Calidad (SGC) </FONT></a> </li>
               <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">Sistema de Gestión de Seguridad y Salud en el Trabajo (SG-SST) </FONT></a> </li>
-              <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">Plan de Seguridad Vial (PESV)</FONT></a> </li>
               <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">PCI-DSS</FONT></a> </li>
             
           </div>
@@ -118,7 +117,24 @@
       
     </div>
     <div class="tabs-panel" id="panel4">
-      <p>Hola 4</p>
+      <article class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="medium-6 cell small-order-2 medium-order-1">
+           <h3>Política de SGI</h3>
+            <p class="subheader">FIRSTSOURCE S.A.S mediante el Sistema de Gestión Integrado (SGI), entrega soluciones logísticas enfocadas en el cumplimiento del servicio a traves de las políticas trabajadas en el Sistema de Gestión de Calidad (SGC), el Sistema de Gestión de Seguridad y Salud en el Trabajo(SG-SST) y el Plan de Seguridad Vial (PESV).
+              
+              </p>
+              <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">Sistema de Gestión de Calidad (SGC) </FONT></a> </li>
+              <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">Sistema de Gestión de Seguridad y Salud en el Trabajo (SG-SST) </FONT></a> </li>
+              <li><a href="{% url 'home_app:politica-sgc' %}" ><FONT COLOR="navy">PCI-DSS</FONT></a> </li>
+            
+          </div>
+          <div class="medium-6 cell small-order-1 medium-order-2">
+            <a href="https://www.fenalco.com.co"> <img class="thumbnail" src="{% static 'img/FENALCO.jpg' %}" width="400" alt="50" ></a>
+          </div>
+        </div>
+      
+      </article>
       
     </div>
     <div class="tabs-panel" id="panel5">
