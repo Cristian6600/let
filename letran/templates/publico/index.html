@@ -14,38 +14,42 @@
           <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 
           <li class="orbit-slide">
+            <img class="orbit-image" src="{% static 'img/BANNER 6.png' %}" alt="Space">
+          </li>
+
+          <li class="orbit-slide">
             <img class="orbit-image" src="{% static 'img/BANNER_1.png' %}" alt="Space">
-            <figcaption class="orbit-caption">Piensa en logística, piensa en estrategia</figcaption>
           </li>
           
           <li class="orbit-slide">
             <img class="orbit-image" src="{% static 'img/BANNER 4.png' %}" alt="Space">
-            <figcaption class="orbit-caption">Piensa en logística, piensa en estrategia</figcaption>
           </li>
           
           <li class="orbit-slide">
             <img class="orbit-image" src="{% static 'img/BANNER_3.png' %}"  alt="Space">
-            <figcaption class="orbit-caption">Piensa en logística, piensa en estrategia</figcaption>
           </li>
         </ul>
         <nav class="orbit-bullets">
           <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
           <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
           <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Third slide details.</span></button>
           
         </nav>
       </div>
     
   </div>
 </div>
-<ul class="accordion" data-accordion data-allow-all-closed="true">
+
+
+<ul class="accordion" data-accordion data-allow-all-closed="true"> 
   
-  <li class="accordion-item" data-accordion-item>
+   <li class="accordion-item" data-accordion-item>
     <a href="#deeplink2" class="accordion-title"  ><center> <H5>  CONSULTAR GUIA</H5> </center></a>
     <div class="accordion-content" data-tab-content id="deeplink2">
       <p class="text-center"><iframe src="https://express.firstsource.net.co/tk1/" width="800"></iframe></p>
     </div>
-  </li>
+  </li> 
   
 </ul>
 
@@ -96,14 +100,18 @@
   </article>
 
   <article class="grid-container">
+    
     <div class="grid-x grid-margin-x">
       <div class="medium-6 cell small-order-2 medium-order-1">
+        
         <p ><strong> ¿Quiénes somos? </strong></p>
         <p class="subheader">Somos un operador logístico integral, con amplia experiencia y reconocimiento en servicios de mensajería expresa, mensajería masiva paqueteo, E-commerce, carga masiva y semi masiva.</p>
         <p class="subheader">Nuestro objetivo principal es la satisfacción de nuestros clientes a través de soluciones innovadoras, que permitan prestar un servicio de excelente calidad.</p>
         <p class="subheader">FIRSTSOURCE S.A.S es un operador logístico a nivel nacional que tiene dentro de sus líneas de negocio la Mensajería Expresa, Paqueteo y Carga, Call y Contact 
-          Center y E-commerce con alta experiencia y reconocimiento en la prestación de servicios integrales; su propósito es la satisfacción de sus clientes a través de soluciones innovadoras y analíticas que permitan prestar un servicio de alta calidad, adaptabilidad y eficiencia.
-          <a href="{% url 'home_app:quienes-somos' %}" ><FONT COLOR="navy">Ver mas... </FONT></a> 
+          Center y E-commerce con alta experiencia y reconocimiento en la prestación de servicios integrales; <br>
+          su propósito es la satisfacción de sus clientes a través de soluciones innovadoras y analíticas que permitan prestar un servicio de alta calidad, adaptabilidad y eficiencia. <a href="{% url 'home_app:quienes-somos' %}" ><FONT COLOR="navy">Ver mas... </FONT></a> 
+     
+          
         </p>
      
       
